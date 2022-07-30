@@ -1,0 +1,13 @@
+SELECT Beverage_category FROM `table 1` WHERE Calories = ( SELECT max(Calories) FROM `table 1` ) ;
+
+SELECT AVG(Calories) , Beverage_category FROM `table 1` GROUP BY Beverage_category ;
+
+SELECT DISTINCT(Beverage_category) FROM `table 1` WHERE Calories < ( SELECT AVG(Calories) FROM `table 1` ) ;
+
+
+
+
+
+
+
+
